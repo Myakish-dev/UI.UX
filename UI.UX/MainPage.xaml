@@ -23,8 +23,8 @@
                     Source=""/>-->
 
                 <Entry
-                    Text="Логин"
-                   
+                    Text="{Binding Text}"
+                    Placeholder="Логин" 
                 />
 
                 <Entry
@@ -37,7 +37,7 @@
 
                 <Button
                     x:Name="CounterBtn"
-                    Text="Click me"
+                    Text="Войти"
                     SemanticProperties.Hint="Counts the number of times you click"
                     Clicked="OnCounterClicked"
                     HorizontalOptions="Center" />
