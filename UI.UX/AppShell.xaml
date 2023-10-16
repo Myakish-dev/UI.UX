@@ -5,16 +5,30 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:UI.UX"
     Shell.FlyoutBehavior="Locked">
+    
+    <ShellContent
+    Title="Авторицазия"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+
 
     <ShellContent
-        Title="Главна"
+    Title="Авторицазия"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+
+    <FlyoutItem>
+        
+   
+    <ShellContent
+        Title="Авторицазия"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
     <ShellContent
-     Title="привет"
-     ContentTemplate="{DataTemplate local:MainPage}"
-     
-     Route="MainPage" />
+         Title="привет"
+         ContentTemplate="{DataTemplate local:Authorization}"
+         Route="MainPage" />
+    </FlyoutItem>
 
 </Shell>
