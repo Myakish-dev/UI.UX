@@ -4,31 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:UI.UX"
-    Shell.FlyoutBehavior="Locked">
+    Shell.FlyoutBehavior="Locked"
+    Background="{DynamicResource PrimaryColor}">
     
-    <ShellContent
-    Title="Авторицазия"
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage" />
-
-
-    <ShellContent
-    Title="Авторицазия"
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage" />
-
-    <FlyoutItem>
-        
-   
     <ShellContent
         Title="Авторицазия"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+
     <ShellContent
-         Title="привет"
-         ContentTemplate="{DataTemplate local:Authorization}"
-         Route="MainPage" />
-    </FlyoutItem>
+        Title="Авторицазия"
+        ContentTemplate="{DataTemplate local:MainPage}"
+    
+        Route="MainPage" />
+
+    
 
 </Shell>

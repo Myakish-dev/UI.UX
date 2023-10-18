@@ -5,7 +5,10 @@
              x:Class="UI.UX.App">
     <Application.Resources>
         <ResourceDictionary>
-            
+
+            <Color x:Key="PrimaryColor">#1D3A6D </Color>
+            <Color x:Key="Primary">#F1F5FE</Color>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

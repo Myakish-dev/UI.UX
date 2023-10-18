@@ -7,11 +7,24 @@
         public MainPage()
         {
             InitializeComponent();
+
+            Button button = new Button
+            {
+                Text = "Navigate!",
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            button.Clicked += async (sender, args) =>
+            {
+                await Navigation.PushAsync(new Authorization());
+            };
+
+            Content = button;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-           
-        }
+        
+
+        
     }
 }
