@@ -3,10 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UI.UX.Authorization"
              Title="Authorization">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+
+
+        <Grid>
+
+
+            <VerticalStackLayout
+             Spacing="25"
+             Padding="30,0"
+             VerticalOptions="Center">
+
+                <!--<Image 
+                 Source="Group 138.png"
+                 />-->
+                <!--<Label
+             Text="Авторизация"
+             SemanticProperties.HeadingLevel="Level2"
+             SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+             FontSize="18"
+             HorizontalOptions="Center" />-->
+
+                <!--<Image
+                 Source=""/>-->
+
+                <Entry
+                 Text="{Binding Text}"
+                 Placeholder="Логин" 
+             />
+
+                <Entry
+                 Placeholder="Пароль" 
+                 IsPassword="True" 
+                 Text="{Binding Password}"
+                 
+             />
+
+
+                <Button
+                 x:Name="CounterBtn"
+                 Text="Войти"
+                 SemanticProperties.Hint="Counts the number of times you click"
+                 
+                 HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+
 </ContentPage>
